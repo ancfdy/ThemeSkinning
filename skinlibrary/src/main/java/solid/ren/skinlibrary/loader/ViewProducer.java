@@ -9,6 +9,8 @@ import android.view.View;
 import java.lang.reflect.Constructor;
 import java.util.Map;
 
+import solid.ren.skinlibrary.utils.SkinL;
+
 /**
  * Created by _SOLID
  * Date:2016/7/11

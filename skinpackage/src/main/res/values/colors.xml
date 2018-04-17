@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#CD3700</color>
-    <color name="colorPrimaryDark">#CD3700</color>//决定状态栏颜色
+    <color name="colorPrimaryDark">#000000</color>//决定状态栏颜色
     <color name="colorAccent">#FF4081</color>
 
     需要换肤的颜色，和原始app中的name保持一致

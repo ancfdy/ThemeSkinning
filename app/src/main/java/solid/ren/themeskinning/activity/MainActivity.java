@@ -65,7 +65,7 @@ public class MainActivity extends SkinBaseActivity {
                 SkinManager.getInstance().restoreDefaultTheme();
                 break;
             case R.id.action_load_local1:
-                SkinManager.getInstance().loadSkin("theme-20171126.skin",
+                SkinManager.getInstance().loadSkin("theme-20180417.skin",
                         new SkinLoaderListener() {
                             @Override
                             public void onStart() {
@@ -93,7 +93,7 @@ public class MainActivity extends SkinBaseActivity {
                 );
                 break;
             case R.id.action_load_local2:
-                SkinManager.getInstance().loadSkin("theme-20171125.skin",
+                SkinManager.getInstance().loadSkin("theme-20180415.skin",
                         new SkinLoaderListener() {
                             @Override
                             public void onStart() {

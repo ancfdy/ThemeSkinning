@@ -12,11 +12,13 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.support.annotation.RestrictTo;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import solid.ren.skinlibrary.ISkinUpdate;
@@ -192,6 +194,7 @@ public class SkinManager implements ISkinLoader {
                         Method addAssetPath = assetManager.getClass().getMethod("addAssetPath", String.class);
                         addAssetPath.invoke(assetManager, skinPkgPath);
 
+                        SkinL.e("xxxx", "file name: " + Arrays.toString(assetManager.list("test")));
 
                         Resources superRes = context.getResources();
                         Resources skinResource = ResourcesCompat.getResources(assetManager, superRes.getDisplayMetrics(), superRes.getConfiguration());
