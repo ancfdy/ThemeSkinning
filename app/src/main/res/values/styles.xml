@@ -22,4 +22,9 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="test_style">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
 </resources>

@@ -46,6 +46,11 @@ public class SkinInflaterFactory implements LayoutInflater.Factory2 {
     public SkinInflaterFactory(AppCompatActivity appCompatActivity) {
         this.mAppCompatActivity = appCompatActivity;
     }
+//    private static final String[] sClassPrefixList = {
+//            "android.widget.",
+//            "android.view.",
+//            "android.webkit."
+//    };
 
     @Override
     public View onCreateView(String s, Context context, AttributeSet attributeSet) {
@@ -64,6 +69,31 @@ public class SkinInflaterFactory implements LayoutInflater.Factory2 {
 
         if (isSkinEnable || SkinConfig.isGlobalSkinApply()) {
             if (view == null) {
+//                LayoutInflater inflater = mAppCompatActivity.getLayoutInflater();
+//                if (-1 == name.indexOf('.'))
+//                {
+//                    for (String prefix : sClassPrefixList)
+//                    {
+//                        try
+//                        {
+//                            view = inflater.createView(name, prefix, attrs);
+//                        } catch (ClassNotFoundException e)
+//                        {
+//                            e.printStackTrace();
+//                        }
+//                        if (view != null) break;
+//                    }
+//                } else
+//                {
+//                    try
+//                    {
+//                        view = inflater.createView(name, null, attrs);
+//                    } catch (ClassNotFoundException e)
+//                    {
+//                        e.printStackTrace();
+//                    }
+//                }
+
                 view = ViewProducer.createViewFromTag(context, name, attrs);
             }
             if (view == null) {
