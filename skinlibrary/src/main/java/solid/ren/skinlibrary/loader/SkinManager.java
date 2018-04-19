@@ -347,6 +347,16 @@ public class SkinManager implements ISkinLoader {
         return trueDrawable;
     }
 
+    public Drawable getDrawable(String name)
+    {
+        int resId = context.getResources().getIdentifier(name, "mipmap", context.getPackageName());
+        if (resId == 0)
+        {
+            resId = context.getResources().getIdentifier(name, "drawable", context.getPackageName());
+        }
+        return getDrawable(resId);
+    }
+
     @RestrictTo(RestrictTo.Scope.LIBRARY)
     public Drawable getDrawable(int resId) {
         Drawable originDrawable = ContextCompat.getDrawable(context, resId);

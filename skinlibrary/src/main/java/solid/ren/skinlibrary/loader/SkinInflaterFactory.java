@@ -181,6 +181,16 @@ public class SkinInflaterFactory implements LayoutInflater.Factory2 {
                     SkinL.e(TAG, e.toString());
                 }
             }
+
+            if ("tl_mipmaps_select".equals(attrName) || "tl_mipmaps_unselect".equals(attrName))
+            {
+                System.out.println("attrName = " + attrName);
+                SkinAttr mSkinAttr = AttrFactory.get(attrName, 0, attrValue, null);
+                if (mSkinAttr != null) {
+                    viewAttrs.add(mSkinAttr);
+                }
+            }
+
         }
         if (!SkinListUtils.isEmpty(viewAttrs)) {
             SkinItem skinItem = new SkinItem();

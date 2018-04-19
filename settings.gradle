@@ -1,1 +1,1 @@
-include ':app', ':skinlibrary', ':skinpackage'
+include ':app', ':skinlibrary', ':skinpackage', ':FlycoTabLayout_Lib', ':skin-red'

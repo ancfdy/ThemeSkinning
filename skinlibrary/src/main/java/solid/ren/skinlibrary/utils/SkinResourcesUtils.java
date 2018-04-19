@@ -29,6 +29,11 @@ public class SkinResourcesUtils {
         return SkinManager.getInstance().getDrawable(resId);
     }
 
+    public static Drawable getDrawable(String resName)
+    {
+        return SkinManager.getInstance().getDrawable(resName);
+    }
+
     public static Drawable getNightDrawable(String resName) {
         return SkinManager.getInstance().getNightDrawable(resName);
     }

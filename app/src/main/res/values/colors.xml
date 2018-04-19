@@ -2,7 +2,10 @@
 <resources>
     <color name="colorPrimary">#5566c6</color>
     <color name="colorPrimaryDark">#3c4caf</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#1d3da6</color>
+
+    <color name="text_background">#5566c6</color>
+    <color name="text_color_in">#ffffff</color>
 
     <color name="app_bg">#ffffff</color>
     <color name="item_bg">#0876fc</color>
@@ -15,4 +18,6 @@
     <color name="text_color_press">#6c6b6b</color>
 
     <color name="item_tv_title_background">#303F9F</color>
+    <color name="common_tab_text_select">#2C97DE</color>
+    <color name="common_tab_text_unselect">#66000000</color>
 </resources>
